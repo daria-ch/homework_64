@@ -7,6 +7,8 @@ import Blog from "./containers/Blog";
 import NewPost from "./containers/NewPost";
 import Post from "./containers/Post";
 import EditPost from "./containers/EditPost";
+import About from "./containers/About";
+import Contacts from "./containers/Contacts";
 
 function App() {
     return (
@@ -17,6 +19,8 @@ function App() {
                     <Route path='/' exact component={Blog}/>
                     <Route path='/posts/:id/edit' component={EditPost}/>
                     <Route path='/home' component={Blog}/>
+                    <Route path='/about' component={About}/>
+                    <Route path='/contacts' component={Contacts}/>
                     <Route path='/posts/add' component={NewPost}/>
                     <Route path='/posts/:id' component={Post}/>
                     <Route path='/posts' component={Blog}/>
